@@ -13,6 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.Dto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCashIdentityProject.PresentationLayer", "EasyCashIdentityProject.PresentationLayer\EasyCashIdentityProject.PresentationLayer.csproj", "{7A4595B6-A684-43F6-8217-29D1B778037C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Not Alma", "Not Alma", "{2E7E0F5D-DFED-4561-B9CF-A7FF3E550D19}"
+	ProjectSection(SolutionItems) = preProject
+		Not.txt = Not.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

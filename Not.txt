@@ -1,0 +1,17 @@
+2. Videoda Sýnýflar tanýmlandý.
+
+3. Videoda EntityLayer Sýnýfýnda Concrete klasöründe entity sýnýfýlarýmýzý tanýmladýk databasee yansýcak olanlarý
+
+4. Videoda SQL baðlantýsý yaptýk ve EntityLayer sýnýfýndaki tanýmlanan sýnýflarý databasemize yansýttýk
+
+5. Videoda SQL tarafýnda UserIdentity sýnýfýna gerekli ekstra baþlýklarý ekleyebilmek için bir appuser ve approle sýnýflarý EntityLayer
+katmanýmýza ekledik onlarýn içinde birer prop ekledik ve appuserý identityuser ile iliþkilendirdik ve approlede identityrole eþitlemiþ 
+olduk ardýndan context sýnýfýna gelip IdentityDbContext<AppUser,AppRole,int> bunu silip DBContext ekledik ki SQL sýnýfýna verileri 
+tekrardan ekleyelim ardýndan ctrl+z yaptýk geri geldi IdentityDbContext sonra packagemanageconsole da bunu SQL yansýttýk
+
+6. Videoda	tabloda iliþkileri nasýl kurucaðýmýz öðrendik. Ýlk baþta kurmak istediðimiz yere gelip hangi kuracaðýmýz tabloyu oraya 
+ilk ýdsini yazdýrýyoruz ardýndan ondan bir kalýntý gibi birþey almak için prop Appuser Appuser gibi tanýmlama yapýyoruz CustomerAccount
+sýnýfýnda bulabilirsin ardýndan orada tanýmladýðýmýzý bide appuser sýnýfýndada tanýmlamamýz gerekiyor. Appuser sýnýfýndada görebilirsin
+Appuser sýnýfýnda bu sefer prop List<CustomerAccount> SQL Adý yazýyoruz. Bu videoda bide registerDto tanýmlandý SQL verilerini çekmek için
+
+7. Video
