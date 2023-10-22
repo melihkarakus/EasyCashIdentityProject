@@ -14,4 +14,23 @@ ilk ýdsini yazdýrýyoruz ardýndan ondan bir kalýntý gibi birþey almak için prop A
 sýnýfýnda bulabilirsin ardýndan orada tanýmladýðýmýzý bide appuser sýnýfýndada tanýmlamamýz gerekiyor. Appuser sýnýfýndada görebilirsin
 Appuser sýnýfýnda bu sefer prop List<CustomerAccount> SQL Adý yazýyoruz. Bu videoda bide registerDto tanýmlandý SQL verilerini çekmek için
 
-7. Video
+7. Videoda BusinessLayer katmanýnda bir paket yüklendi validasyon paketi kurallarý koymak için ardýndan BusinessLayer katmanýna Validasyon
+klasörü oluþturduk ve her bir sýnýf için ayrý bir validasyon oluþturduk ve bu sýnýflara giriþ yapýp baktýðýnda içindeki kodlarda açýklama
+satýrlarýný görebilirsin tanýmlamalar yapýldý.
+
+8. Videoda DataAccessLayer abstract(interfaceleri tutucak) klasörü interfacelerimizi tutucak. Repositories(crud iþlemleri tekrardan kurtarýr klasör
+Abstarct klasörünün içine bir interface tanýmladýk IGenericDal olarak ve crud iþlemlerini tekrardan kuratarýyor tek seferde tanýmlanýyor.
+Ayriyetten tanýmlanan ICustomerAccount ve Process Ýnterfaceleri crud iþlemler haricinde herhangi bir baþka iþlemde kullanýlmasý için 
+crud iþlemlerine karýþmaksýzýn orada istenilen metod tanýmlanabilir. Repository de iste tanýmlanan metodlarýn iþleme alýnmasý için 
+detaylý kodlama yapýlýr.
+
+9. Videoda BusinessLayer Katmanýnda iki klasör eklendi ilki Abstract klasörü buradada DataAccessLayer katmannýda olduðu gibi crud iþlemleri
+için IGenericService içine crud iþlemlerini tanýmladýk ve bunlarýn baþlarýna T koyduk ve CustomerAccount ve Process için ayrý tanýmlanan
+methodlar içinde abstractda klasör açtýk. Bir sonraki adýmda ise Concrete klasörünü tanýmladýk o klasörde CustomerAccountManager ve 
+ProcessManager tanýmladýk. Bunlarý IGenericServiceden crud iþlemleri için implemente aldýk ardýndan DataAccessLayer kýsmýndaki 
+ICustomerAccountDal ve ProcessDal dan bir miras aldýk ve crud iþlemlerin içine DataAccesLayerdaki crud iþlemleri çaðýrýp iþlemleri
+gerçekleþmesi için gerekli kodlarý yazdýk.
+
+10. Video Ýzle
+
+   
