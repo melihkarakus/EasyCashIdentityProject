@@ -31,6 +31,17 @@ ProcessManager tanýmladýk. Bunlarý IGenericServiceden crud iþlemleri için implem
 ICustomerAccountDal ve ProcessDal dan bir miras aldýk ve crud iþlemlerin içine DataAccesLayerdaki crud iþlemleri çaðýrýp iþlemleri
 gerçekleþmesi için gerekli kodlarý yazdýk.
 
-10. Video Ýzle
+10. Videoda da bir register sayfasý oluþturduk ve register ile alakalý düzenlemeler yaptýk. Ardýndan RegisterControllerda controller 
+açtýk ve ardýndan içine bir index oluþturduk bu indexde giriþ yapýlmasý için gerekli veri giriþlerini dtodan çektik. Bunlarý index 
+tarafýna çaðýrdýk ve bir giriþ yapma kodlarý yazdýk.
 
+11. Videoda Yapýlan Register için View Olan ýndex sayfasýna kayýt olabilmesi için ve password yanlýþ yazýldýðýnda kullanýcýya çýkarýlan
+uyarýlarý göstermek için bir düzeltme yapýldý ilk index tarafýnda bir düzeltme oldu modelonly yazýldý divin içine ardýndan bunu 
+RegisterController sayfasýnda çaðýrmýþ olduk.
+
+12. Videoda PresentationLayer katmanýna bir customeridentityvalidator adýnda vbir model oluþturduk ardýndan bu oluþturulan modelde ise 
+password kýsmýnda büyük küçük harf gibi uyarýlarý kullanýcýya türkçe þeklinde göstermek için gerekli kodlamalý ve override ne anlama
+geldiðini öðrendik override tanýmlanan bir kodu kendimiz nasýl tercihlerle devam ettireceðimizi belirleyecek þekilde açýkladým ben 
+
+13. Video izle
    
