@@ -42,6 +42,30 @@ RegisterController sayfasýnda çaðýrmýþ olduk.
 12. Videoda PresentationLayer katmanýna bir customeridentityvalidator adýnda vbir model oluþturduk ardýndan bu oluþturulan modelde ise 
 password kýsmýnda büyük küçük harf gibi uyarýlarý kullanýcýya türkçe þeklinde göstermek için gerekli kodlamalý ve override ne anlama
 geldiðini öðrendik override tanýmlanan bir kodu kendimiz nasýl tercihlerle devam ettireceðimizi belirleyecek þekilde açýkladým ben 
+program cs tarafýnda AddErrorDescriber<CustomIdentityValidator>(); bu kodlar tanýmlanmýþtýr.
 
-13. Video izle
-   
+13. Videoda bir confirmcode ile alakalý EntityLayer katmanýnda appuser içine confirmcode eklendi ve bu confirmcode database entegre edildi
+ardýndan RegisterControllerda random bir sayý oluþturuldu ve confirmcode random sayýya entegre oldu.
+
+14. Videoda Index içine confirm code gelene 6 haneli sayýyý karþý tarafýn mailine gönderme iþlemi yapýldý registerController da 
+görebilirsin.
+
+15. Videoda ConfirmCode için yapýlan sayfada mail adresini taþýyabiliyormuyuz diye kontroller yaptýk ve RegisterController içine bir 
+tempdata tanýmladýk ve mail ile gelip gelmediðine baktýk bunu CondirmCodeController sayfasýnda baktýk tempdata ile mail taþýma iþlemi ve
+yanýna bir iþlem taþýyabiliyormuyuz diye baktýk ve taþýnýyor bunu haricinde taþýma yapabilmek için bir model oluþturduk ama daha 
+kullanmadýk
+
+16. Videoda Bir Model oluþturuldu ConfirmMailViewModel orada hem mail hemde confirmcode tutuldu ardýndan bunlarý confirmMailController
+da çaðrýldý ve onaylama iþlemi yaptýrdýk gelen confirm koduyla 
+
+17. Videoda confirmcode statusu false geliyordu bunu 6 haneli gelen kodu girip confirmcode true hale getirmek için gerekli kodlar 
+confirmcontroller tanýmladýk confirmcode true hale getirdik
+
+18. Videoda Login iþlemi yapýldý ilk baþta LoginController tanýmlandý ardýndan bir model tanýmladýk verileri databaseden çekmek için
+ardýndan loginController Usermanager ve Signinmanagerlarýn bir verilerini tuttuk sonrasýnda httpget ve httppost ayalarýný ayarladýk ve 
+biz httppost ile çalýþacaðýz. PasswordAsync olarak seçtik loginviewmodelden hem username seçtik hemde password seçtik gelen deðerleri
+sonuca atayalým eðer sonuç doðru ise bize bir user diye deðiþken atamamýz lazým userýn username verisini tutmamýz için bunu seçtirmemiz 
+gerekecektir ve bunu da userda findbyname name þeklinde seçmemiz gerekicek parantez açtýk ve loginviewmodelden gelen username seçtirdik
+eðer usernameden gelen confirmcode doðru ise bizi istediðimiz sayfaya yönlendircek.
+
+19. Video Ýzle
