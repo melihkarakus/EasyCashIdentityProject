@@ -68,4 +68,9 @@ sonuca atayalým eðer sonuç doðru ise bize bir user diye deðiþken atamamýz lazým 
 gerekecektir ve bunu da userda findbyname name þeklinde seçmemiz gerekicek parantez açtýk ve loginviewmodelden gelen username seçtirdik
 eðer usernameden gelen confirmcode doðru ise bizi istediðimiz sayfaya yönlendircek.
 
-19. Video Ýzle
+19. Videoda Müþteri Sayfasýnda düzenlemeler yaptýk MyProfileControllerdaki index içine Müþteri sayfasýný ekledik ve birer viewcomponent
+ayýrdýk ilk baþta PresentationLayer katmanýna ViewComponents oluþturduk onun için ayrý bir klasör olarak member oluþturduk yani müþteri
+buraya bir class açtýk ve Invoke olarak tanýmladýk ardýndan shared içine Components tanýmladýk ve memberin içinde classlarý isimlerini
+klasörlerin isimleri yaptýk ve bir razor view oluþturuduk onuda partialcomponent olarak ismide default olarak oluþturduk.
+
+20. Video Ýzle
