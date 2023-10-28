@@ -73,4 +73,12 @@ ayýrdýk ilk baþta PresentationLayer katmanýna ViewComponents oluþturduk onun içi
 buraya bir class açtýk ve Invoke olarak tanýmladýk ardýndan shared içine Components tanýmladýk ve memberin içinde classlarý isimlerini
 klasörlerin isimleri yaptýk ve bir razor view oluþturuduk onuda partialcomponent olarak ismide default olarak oluþturduk.
 
-20. Video Ýzle
+20. Videoda Layout düzenlemeleri yapýldý
+
+21. Videoda login yapan kiþinin bilgilerini getirme iþlemi yaptýrdýk. myaccountcontroller içindeki ilk httpget iþlemninde verileri 
+getirme iþlemi yaptýk ve bunlarý ýndex asp-for ile verileri getirdik bunun için ama ilk baþta dto tanýmladýk ki verileri çekmek için
+
+22. Videoda login iþlemi yapan kullanýcýnýn bilgilerini getirdikten sonra bir update þeklinde tanýmladýk httppost ile çalýþacaðý için
+formun methodu post olacaktýr.
+
+23. Video Ýzle

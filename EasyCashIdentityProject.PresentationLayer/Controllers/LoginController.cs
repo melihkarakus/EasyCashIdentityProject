@@ -33,7 +33,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                 if(user.EmailConfirmed == true)//eğer userdan gelen confirmcode doğru ise 
                 {
                     //MyProfile Index atmış oluruz.
-                    return RedirectToAction("Index", "MyProfile");
+                    return RedirectToAction("Index", "MyAccounts");
                 }
             }
             return View();
