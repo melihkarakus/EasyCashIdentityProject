@@ -81,4 +81,29 @@ getirme iþlemi yaptýk ve bunlarý ýndex asp-for ile verileri getirdik bunun için 
 22. Videoda login iþlemi yapan kullanýcýnýn bilgilerini getirdikten sonra bir update þeklinde tanýmladýk httppost ile çalýþacaðý için
 formun methodu post olacaktýr.
 
-23. Video Ýzle
+23. Videoda CustomerAccount ile CustomerAccountProcess arasý iliþkiler yaptýk para transferi gönderildiðinde kullanýcýnýn bakiyesinde
+düþüþ yapabilmesi için ilk baþta CustomerAccount bir list türünde CustomerSender ve CustomerReceiver tanýmladýk. Ardýndan 
+CsutomerAccountProcess de bunlarýn ýdlerini tuttuk ki biz ýd ile çalýþacaðýz ve para transferi gerçekleþti.
+
+24. Videoda para gönderme transfer sayfasý ve alt sorgularý yapýldý mutlaka 24 izle çünkü orasý biraz karmaþýk ardýndan sendmoney
+controllerda bir dto tanýmlayarak httppost halinde gereklþ kodlarý yazdýk kodlarýn kesinlikle açýklama satýrlarýna bakmalýsýn
+
+25. Videoda programcs de çalýþtýrmak için efcustomerproccessdal tanýmladýk ardýndan programcs de bunu çaðýrdýk bakabilirsin oraya
+ardýndan hata alýnmýþtý onu düzelttik kullanýcýya senderýd göndermemiz gerekiyordu giriþ yapan kiþinin ýdsi deðil 26. videoda 
+düzeltilecek ve aoutomapper kullanýlacaktýr.
+
+26. Videoda Customersayfasýnda bir bölüm daha eklendi para transferleri bölümü Componentsde olan Sidebar bölümüne eklenmiþtir.
+ardýndan CustomerAccountProcess controllerýnda bir prara transferi iþlemi yapmýþtýk fakat senderid ise biz kendi elimizle 
+giriyorduk orada SendMoneyControllerda seçtirme yapabiliyoruz artýk.
+
+27. Videoda Sidebar üzerinde parametlerle ilgili tl euro ve dolar þeklinde asp-controller kullanýldý 
+asp-action ve asp-route-currently ve onada bir ad verildi bunuda SendMoney Controllerda çaðýrdýk ve viewbag ile týklanan
+sayfanýn verileri getirdik tl, euro ve dolar þeklinde iþlem yaptýrmak için
+
+28. Videoda RapidApý ile doviz kuru bilgilerini getirdik 
+
+29. Videoda Rapiradpi ile döviz kuru bilgilerini getirdik ve layout düzenlemesini yaptýk döviz kurlarýnýn çektik ve ardýndan 
+MyLastProcessController açtýk yani son iþlemlerim yaptýklarým orada yazacak bir view oluþrup dizayn yaptýk ve ardýndan gerekli 
+düzenlemeleri view üzerinden yaptýk.
+
+30. Video Ýzle

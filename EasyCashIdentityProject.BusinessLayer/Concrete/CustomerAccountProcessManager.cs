@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace EasyCashIdentityProject.BusinessLayer.Concrete
 {
     //ICustomerAccounProcesstServiceden İpmlamente ettik
-    internal class CustomerAccountProcessManager : ICustomerAccountProcessService
+    public class CustomerAccountProcessManager : ICustomerAccountProcessService
     {
         //IcustomerAccountProcessDal dan generate const. aldık
         private readonly ICustomerAccountProcessDal _customerAccountProcessDal;

@@ -25,7 +25,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 
             // Kullanıcı verilerini düzenlemek için bir DTO (Data Transfer Object) oluşturuyoruz
             AppUserEditDto appUserEditDto = new AppUserEditDto();
-            appUserEditDto.Name = values.Name; //valuesden gelen veriyi appuseregisterdto eşitliyoruz 
+            appUserEditDto.Name = values.Name; //Valuesden gelen veriyi appuseregisterdto eşitliyoruz 
             appUserEditDto.Surname = values.Surname;
             appUserEditDto.PhoneNumber = values.PhoneNumber;
             appUserEditDto.Email = values.Email;
