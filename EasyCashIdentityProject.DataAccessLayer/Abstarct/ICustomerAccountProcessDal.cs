@@ -10,5 +10,6 @@ namespace EasyCashIdentityProject.DataAccessLayer.Abstarct
     //Bu sınıf için ayrı özel bir metod oluşturmak istersek burada tanımlayabiliriz.
     public interface ICustomerAccountProcessDal : IGenericDal<CustomerAccountProcess>
     {
+        List<CustomerAccountProcess> MyLastProcess(int id);
     }
 }

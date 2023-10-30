@@ -106,4 +106,8 @@ sayfanýn verileri getirdik tl, euro ve dolar þeklinde iþlem yaptýrmak için
 MyLastProcessController açtýk yani son iþlemlerim yaptýklarým orada yazacak bir view oluþrup dizayn yaptýk ve ardýndan gerekli 
 düzenlemeleri view üzerinden yaptýk.
 
-30. Video Ýzle
+30. Videoda ilk baþta dataaccess katmanýnda ICustomerAccounProcessDal bölümünde kendine özel bir method tanýmlamak istedik
+ardýndan bunu EFCustomerAccountProcessde implemente edip ardýndan içine gerekli kodlamalarý yaptýk.Ardýndan BusinessLayer
+katmanýnda ICustomerAccountServicede tanýmlanan MyLastProcess methodunu baþýna T olarak koyup bunu bide 
+CustomerAccountProcessManager da bunun bir implemente ettik ve dataaccesde tanýmlanan MyLastProcess orada çaðýrdýk 
+ardýndan MyLastProcessController da bunu çaðýrma iþlemleri yapýldý.
