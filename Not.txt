@@ -111,3 +111,14 @@ ardýndan bunu EFCustomerAccountProcessde implemente edip ardýndan içine gerekli 
 katmanýnda ICustomerAccountServicede tanýmlanan MyLastProcess methodunu baþýna T olarak koyup bunu bide 
 CustomerAccountProcessManager da bunun bir implemente ettik ve dataaccesde tanýmlanan MyLastProcess orada çaðýrdýk 
 ardýndan MyLastProcessController da bunu çaðýrma iþlemleri yapýldý.
+
+31. Videoda ilk baþta bir controller oluþturduk oluþturulan controller ise AccountListForCopyController oluþturduk ve ardýndan
+bir ýndex için view oluþturduk sitemizin görünümü için sonrasýnda bizim ýban seçtirmemiz gerekicek bu sebepten DataAccess Katmanýna
+CustormerAccount için özel iþlemler olacaðýndan ICustomerAccountsDal'a bir özel tanýmlama yaptýk GetCustomerAccountList bu adda
+ardýndan bunu EfCustomerAccountsDal çaðýrdýk bunu çaðýrdýkdan sonra seçtirme seçenekleri için kodlama gereklilikleri yazdýk. 
+BusinessLayer katmanýnda bu iþlemi gerçekleþtirmek için ICustomerAccountService Ekranýndan DataAccess katmanýndan tanýmlanan
+özel iþlemi burayada çaðýrdýk ve buradan iþleme aldýk fakat baþýna T koyduk ki farklýlýk olsun bunu bide Manager sýnýfýnda implemente
+ettik ve orada gerekli listelem kodunu yazdýk orada sabit bir kod var onu yazýyoruz. Ardýndan çaðýrýlan T þeklinde özel tanýmý controller
+ekranýnda çaðýrdýk ve bunu sitemize entegre edip dinamik hale getirmiþ olduk.
+
+32. Video Ýzle

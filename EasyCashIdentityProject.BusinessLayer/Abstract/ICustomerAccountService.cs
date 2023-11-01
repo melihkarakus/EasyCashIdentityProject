@@ -10,5 +10,6 @@ namespace EasyCashIdentityProject.BusinessLayer.Abstract
    //Eğer farklı method tanımlanırsa DataAcces katmanında repository burada Başına T koyup ayırıp bunuda PresentationLayerda çağırırız
     public interface ICustomerAccountService : IGenericService<CustomerAccount>
     {
+        List<CustomerAccount> TGetCustomerAccountList(int id);
     }
 }

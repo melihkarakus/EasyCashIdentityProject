@@ -25,6 +25,8 @@ namespace EasyCashIdentityProject.DataAccessLayer.EnttiyFreamwork
             // "SenderCustomer" ilişkisini de dahil eder, böylece "SenderCustomer" nesnelerine erişebilirsiniz.
             var values = context.CustomerAccountProcesses
                 .Include(y => y.SenderCustomer) // "SenderCustomer" ilişkisini yükler
+                .Include(w => w.ReceiverCustomer)// "ReceiverCustomer" ilişkisini yükler
+                .ThenInclude(z => z.AppUser)// buradaki işlem appuserda userın kullanıcı adı ve soyadını getirmesi için 
                 .Where(x => x.ReceiverID == id || x.SenderID == id) // Belirtilen "id" ile eşleşen nesneleri filtreler
                 .ToList(); // Sonuçları bir liste olarak alır
 

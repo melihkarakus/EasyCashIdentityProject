@@ -19,11 +19,20 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            var context = new Context();
-            int id = context.CustomerAccounts.Where(x => x.AppUserID == user.Id && x.CustomerAccountCurrency == "Türk Lirası")
-                .Select(y=>y.CustomerAccountID).FirstOrDefault();
+            var user = await _userManager.FindByNameAsync(User.Identity.Name); // Kullanıcıyı kimlik adına göre bulur.
+
+            var context = new Context(); // Veritabanı bağlamını oluşturur.
+
+            // Kullanıcının kimliği ile ilişkilendirilmiş ve para birimi "Türk Lirası" olan müşteri hesaplarını sorgular ve ilgili ilk hesap ID'sini alır.
+            int id = context.CustomerAccounts
+                .Where(x => x.AppUserID == user.Id && x.CustomerAccountCurrency == "Türk Lirası")
+                .Select(y => y.CustomerAccountID)
+                .FirstOrDefault();
+
+            // Hesap ID'si kullanılarak son işlem verilerini alır.
             var values = _customerAccountProcessService.TMyLastProcess(id);
+
+            // Sonuçları bir görünüme aktarır.
             return View(values);
         }
     }
